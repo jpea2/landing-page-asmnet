@@ -1,0 +1,97 @@
+:root {
+    --bgcolor-footandhead: #1F2937;
+    --maintext: #F9FAF8;
+    --hero-headerlink: #E5E7EB;
+    --header-logotext: #F9FAF8;
+    --button: #3882F6;
+    --infoheader: #1F2937;
+    --quote-section: #E5E7EB;
+    --quote-text: #1F2937;
+    color: white;
+    background-color: var(--bgcolor-footandhead);
+    width: auto;
+
+}
+
+html, body {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 750px;
+    min-width: fit-content;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+nav {
+    margin: 0;
+    position: sticky;
+    top: 0;
+    padding: 0;
+    background-color: var(--bgcolor-footandhead);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    margin-top: 3rem;
+    background-color: var(--bgcolor-footandhead);
+    height: fit-content;
+}
+.belowNav {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondaryText {
+    font-size: 18px;
+}
+
+.signup {
+    background-color: rgb(7, 97, 234);
+    color: white;
+    padding: 1rem 3rem;
+    font-size: larger;
+    border-style: none;
+    border-radius: 0.5rem;
+
+}
+
+
+.rightHeader{
+    background-color: lightgray;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    flex: 1;
+}
+
+.rightHeaderContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
