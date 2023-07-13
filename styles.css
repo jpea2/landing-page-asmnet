@@ -14,6 +14,7 @@
 }
 
 html, body {
+    height: auto;
     width: 750px;
     display: flex;
     flex-direction: column;
@@ -27,8 +28,15 @@ body {
     min-width: fit-content;
 }
 
+p {
+    color: var(--quote-text);
+    font-size: larger;
+    word-break: break-all;
+    max-width: 15rem;
+}
+
 h1 {
-    font-size: 48px;
+    font-size: 52px;
     font-weight: bold;
 }
 nav {
@@ -44,8 +52,10 @@ nav {
     width: 100%;
 }
 a {
-    color: white;
+    color: var(--hero-headerlink)   ;
     text-decoration: none;
+    margin-right: 1rem;
+    font-size: 30px;
 }
 
 .header {
@@ -54,9 +64,8 @@ a {
     height: fit-content;
 }
 .belowNav {
-    margin-top: 15rem;
+    margin-top: 5rem;
     display: flex;
-    justify-content: space-between;
     gap: 25px;
 }
 .header {
@@ -66,7 +75,9 @@ a {
 }
 
 .secondaryText {
-    font-size: 18px;
+    font-size: 32px;
+    display: flex;
+    color: grey;
 }
 
 .signup {
@@ -82,16 +93,46 @@ a {
 
 .rightHeader{
     background-color: lightgray;
+    margin-right: 1rem;
+    margin-left: 1rem;
     height: 100%;
+    width: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px;
-    flex: 1;
 }
 
-.rightHeaderContainer{
+.leftHeader {
+    flex: 1;
+    max-width: 50%;
+}
+
+.randomInformation {   
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 5rem;
+}
+main {
+    background-color: white;
+    width: 100%;
+    margin-top: 7rem;
+}
+
+#containerForBoxes {
     display: flex;
-    align-items: center;
     justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    height: 500px;
+}
+
+.box {
+    width: 15rem;
+    height: 15rem;
+    border: 5px solid var(--button);
+    border-radius: 1rem;
 }
